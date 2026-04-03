@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Orbit — Ali &amp; Jose</title>
+  <meta name="description" content="An anniversary love letter from Jose to Ali." />
+
+  <!-- Google Fonts: Cormorant Garamond (serif) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── ANIMATED BACKGROUND CANVAS ─── -->
+  <canvas id="bg" aria-hidden="true"></canvas>
+
+  <!-- ─── SIDE DOT NAVIGATION ─── -->
+  <nav class="dot-nav" aria-label="Page sections">
+    <a href="#hero"    class="dot" data-sec="hero"    aria-label="Hero"     title="Home"></a>
+    <a href="#counter" class="dot" data-sec="counter" aria-label="Counter"  title="Time Together"></a>
+    <a href="#timeline"class="dot" data-sec="timeline"aria-label="Timeline" title="Our Story"></a>
+    <a href="#letter"  class="dot" data-sec="letter"  aria-label="Letter"   title="Letter"></a>
+    <a href="#song"    class="dot" data-sec="song"    aria-label="Song"     title="Our Song"></a>
+    <a href="#reasons" class="dot" data-sec="reasons" aria-label="Reasons"  title="Reasons"></a>
+    <a href="#closing" class="dot" data-sec="closing" aria-label="Closing"  title="Promise"></a>
+  </nav>
+
+  <!-- ════════════════════════════════════
+       § 1 · HERO
+       ════════════════════════════════════ -->
+  <section id="hero" class="s-hero">
+    <div class="hero-inner">
+      <p class="eyebrow fi" style="--d:.2s">
+        Since <time datetime="2025-04-04">April 4, 2025</time>
+      </p>
+
+      <h1 class="hero-names fi" style="--d:.55s">
+        <span class="name-hers">Ali</span>
+        <span class="hero-amp" aria-hidden="true">&amp;</span>
+        <span class="name-his">Jose</span>
+      </h1>
+
+      <p class="hero-tagline fi" style="--d:.9s">
+        <em>In a universe of a billion stars,<br>I'd cross every orbit to find you.</em>
+      </p>
+
+      <a href="#counter" class="btn-primary magnetic fi" style="--d:1.25s" aria-label="Begin our story">
+        <span>Begin Our Story</span>
+      </a>
+    </div>
+
+    <!-- Animated scroll cue -->
+    <div class="scroll-cue fi" style="--d:1.7s" aria-hidden="true">
+      <span class="scroll-line"></span>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════
+       § 2 · LIVE COUNTER
+       ════════════════════════════════════ -->
+  <section id="counter" class="s-counter" aria-label="Time together">
+    <div class="wrap">
+      <p class="tag sr" data-delay=".0">Together</p>
+
+      <div class="counter-grid" role="list" aria-label="Duration of our relationship">
+        <div class="c-unit sr" data-delay=".05" role="listitem">
+          <span class="c-num" id="c-years"  aria-label="Years">–</span>
+          <span class="c-lbl">Years</span>
+        </div>
+        <span class="c-dot sr" data-delay=".08" aria-hidden="true">·</span>
+        <div class="c-unit sr" data-delay=".10" role="listitem">
+          <span class="c-num" id="c-months" aria-label="Months">–</span>
+          <span class="c-lbl">Months</span>
+        </div>
+        <span class="c-dot sr" data-delay=".13" aria-hidden="true">·</span>
+        <div class="c-unit sr" data-delay=".15" role="listitem">
+          <span class="c-num" id="c-days"   aria-label="Days">–</span>
+          <span class="c-lbl">Days</span>
+        </div>
+        <span class="c-dot sr" data-delay=".18" aria-hidden="true">·</span>
+        <div class="c-unit sr" data-delay=".20" role="listitem">
+          <span class="c-num" id="c-hours"  aria-label="Hours">–</span>
+          <span class="c-lbl">Hours</span>
+        </div>
+        <span class="c-dot sr" data-delay=".23" aria-hidden="true">·</span>
+        <div class="c-unit sr" data-delay=".25" role="listitem">
+          <span class="c-num" id="c-mins"   aria-label="Minutes">–</span>
+          <span class="c-lbl">Minutes</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════
+       § 3 · OUR STORY & TIMELINE
+       ════════════════════════════════════ -->
+  <section id="timeline" class="s-timeline" aria-label="Our story milestones">
+    <div class="wrap">
+      <p class="tag sr" data-delay=".0">Our Story</p>
+      <h2 class="section-h sr" data-delay=".06">Our memories, day by day.</h2>
+
+      <ul class="tl-list-merged" role="list">
+
+        <li class="tl-merged-item sr-left" data-delay=".00">
+          <div class="tl-merged-gallery">
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_CE4C1889-95F3-40B7-B3F6-1005F17AC10C.jpeg" alt="January 1, 2025 memory" loading="lazy" />
+            </div>
+          </div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <span class="tl-num">01</span>
+            <h3 class="tl-title">Memory 01</h3>
+            <p class="tl-text">January 1, 2025</p>
+            <p class="tl-note-slot">New year date to be remembered, kasi nag share ka pa ng fireworks nun, then first picture mo na sinend with footie hehehe.</p>
+          </div>
+        </li>
+
+        <li class="tl-merged-item sr-right" data-delay=".05">
+          <div class="tl-merged-gallery">
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_4943A227-0D7D-4456-B105-4D07A0D0E591.jpeg" alt="January 11, 2025 memory" loading="lazy" />
+            </div>
+          </div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <span class="tl-num">02</span>
+            <h3 class="tl-title">Memory 02</h3>
+            <p class="tl-text">January 11, 2025</p>
+            <p class="tl-note-slot">First labas natin sa SM. Super memorable for me kasi lumabas tayo para mag kitach, then tinutulungan mo akong mamili ng glasses ko. Fun kahit di pa tayo ganun ka daldal nung time na yun.</p>
+          </div>
+        </li>
+
+        <li class="tl-merged-item sr-left" data-delay=".10">
+          <div class="tl-merged-gallery">
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_BD7A3114-DACF-46B3-BB2F-C880627716B7.jpeg" alt="January 21, 2025 memory" loading="lazy" />
+            </div>
+          </div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <span class="tl-num">03</span>
+            <h3 class="tl-title">Memory 03</h3>
+            <p class="tl-text">January 21, 2025</p>
+            <p class="tl-note-slot">Inserted this because first picture mo with mochi, and sobrang cute niyo hehehe.</p>
+          </div>
+        </li>
+
+        <li class="tl-merged-item sr-right multi-bundle" data-delay=".15">
+          <div class="tl-merged-gallery">
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_F287A4B5-CA08-4531-8DD7-8B081270AA5A.jpeg" alt="January 31, 2025 memory" loading="lazy" />
+            </div>
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_D81EBC70-1094-483D-B403-37ED678EF4F6.jpeg" alt="January 31, 2025 memory" loading="lazy" />
+            </div>
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_11C502BD-D314-4AF4-BA87-9E6F6611DA15.jpeg" alt="January 31, 2025 memory" loading="lazy" />
+            </div>
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_597DB11F-2E43-4F4C-80FC-20501C51568C.jpeg" alt="January 31, 2025 memory" loading="lazy" />
+            </div>
+          </div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <span class="tl-num">04</span>
+            <h3 class="tl-title">Memory 04</h3>
+            <p class="tl-text">January 31, 2025</p>
+            <p class="tl-note-slot">These pictures are not accurate dates kasi same day ko pala lahat na-save hehehe. Pero memorable sakin to: yung dalawa na magkasama tayo ay unang beses ka nahuli HHAHAHAHHA, then date natin sa Dono's (sorry ulit for what happened that day hehehe), then last pic na sobrang gandang ganda akoch sayo hohohohoho.</p>
+          </div>
+        </li>
+
+        <li class="tl-merged-item sr-left" data-delay=".20">
+          <div class="tl-merged-gallery">
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_665B6079-0C90-49BC-BC7E-F8B9F7390F51.jpeg" alt="February 4, 2025 memory" loading="lazy" />
+            </div>
+          </div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <span class="tl-num">05</span>
+            <h3 class="tl-title">Memory 05</h3>
+            <p class="tl-text">February 4, 2025</p>
+            <p class="tl-note-slot">Same context nung last memory, one of our early times magkasama before maging tayo. Capture to ng friends mo, and memorable siya for me.</p>
+          </div>
+        </li>
+
+        <li class="tl-merged-item sr-right multi-bundle" data-delay=".25">
+          <div class="tl-merged-gallery">
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_ABA0B5EA-8FC6-4938-BAD6-339F4E3C8311.jpeg" alt="February 14, 2025 memory" loading="lazy" />
+            </div>
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_A3CEC510-2884-4584-B802-408B11152145.jpeg" alt="February 14, 2025 memory" loading="lazy" />
+            </div>
+          </div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <span class="tl-num">06</span>
+            <h3 class="tl-title">Memory 06</h3>
+            <p class="tl-text">February 14, 2025</p>
+            <p class="tl-note-slot">The memory where it all began. Ito yung time na inask kita about ligaw and you accepted, and let me prove my love for you, my lovey. Lalong memorable because ginawa ko yung lego na bulaklak kasi akala ko kulang money pang date natin at pang actual flowers, pero buti nagkasya and hindi lang lego flowers nabigay ko that day AHAHHAHAHAHHA.</p>
+          </div>
+        </li>
+
+        <li class="tl-merged-item sr-left" data-delay=".30">
+          <div class="tl-merged-gallery">
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_B3A33C8D-6025-44DB-B63F-8F0BF0C2E5F5.jpeg" alt="February 27, 2025 memory" loading="lazy" />
+            </div>
+          </div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <span class="tl-num">07</span>
+            <h3 class="tl-title">Memory 07</h3>
+            <p class="tl-text">February 27, 2025</p>
+            <p class="tl-note-slot">Memorable din sakin to kasi absent ata ako or galing school, then umalis kasi umattend ako ng seminar for my scholarship. Pag-uwi ko, sinundo ako sayo because of your situation that day HAHAHAHAHAHHAHAHAHA.</p>
+          </div>
+        </li>
+
+        <li class="tl-merged-item sr-right" data-delay=".35">
+          <div class="tl-merged-gallery">
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_CC221D14-F410-4AD6-8A9D-D08F8A92909C.jpeg" alt="February 28, 2025 memory" loading="lazy" />
+            </div>
+          </div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <span class="tl-num">08</span>
+            <h3 class="tl-title">Memory 08</h3>
+            <p class="tl-text">February 28, 2025</p>
+            <p class="tl-note-slot">Date natin na kumain muna sa McDo Balagtas then tumambaych sa Dunkin Donut if tama alala ko hehehe. Cute nitong picture kaya special memory siya.</p>
+          </div>
+        </li>
+
+        <li class="tl-merged-item sr-left" data-delay=".40">
+          <div class="tl-merged-gallery">
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_B67F50EF-9FD6-4809-988F-05F4E7FA7302.jpeg" alt="March 20, 2025 memory" loading="lazy" />
+            </div>
+          </div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <span class="tl-num">09</span>
+            <h3 class="tl-title">Memory 09</h3>
+            <p class="tl-text">March 20, 2025</p>
+            <p class="tl-note-slot">This is the day that we had ano and it is a good memory, not because of the you know part, but because we opened ourselves to a new side of us. Not just thinking about the libog part, but getting to know each other more because we opened that part of ourselves that we will reach at some point in our relationship. Also, our first legit kiss hihihihihihihihihihihihihihihi.</p>
+          </div>
+        </li>
+
+        <li class="tl-merged-item sr-right" data-delay=".45">
+          <div class="tl-merged-gallery">
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_4ADCAAF0-4B12-4ADC-9C0F-321200894054.jpeg" alt="March 28, 2025 memory" loading="lazy" />
+            </div>
+          </div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <span class="tl-num">10</span>
+            <h3 class="tl-title">Memory 10</h3>
+            <p class="tl-text">March 28, 2025</p>
+            <p class="tl-note-slot">This is the time na we got more comfortable with our katawans and all na, because this is the time na naga cuddle cuddle na sa apartment and we are just our full selves na talaga.</p>
+          </div>
+        </li>
+
+        <li class="tl-merged-item sr-left" data-delay=".50">
+          <div class="tl-merged-gallery">
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_FAB2628A-C114-40E5-9491-AE95020951D7.jpeg" alt="April 4, 2025 memory" loading="lazy" />
+            </div>
+          </div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <span class="tl-num">11</span>
+            <h3 class="tl-title">Memory 11</h3>
+            <p class="tl-text">April 4, 2025</p>
+            <p class="tl-note-slot">This is the day that we will be celebrating today. Until this day, I am still and will always be thankful that you answered me with a yes. Memorable because of that, and yun nga, it marked another start or milestone in our relationship. Another milestone since before mo pa naman ako sagutin ng yes, madami na tayong memories and things na ginagawa kahit no-sagot relationship pa. I am so thankful this day happened because nakikita ko talaga lovey na ikawch talaga ang gusto ko.</p>
+          </div>
+        </li>
+
+        <li class="tl-merged-item sr-right" data-delay=".55">
+          <div class="tl-merged-gallery">
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_8712F27C-6F5A-41A7-82EF-9C0729F06DCF.jpeg" alt="May 4, 2025 memory" loading="lazy" />
+            </div>
+          </div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <span class="tl-num">12</span>
+            <h3 class="tl-title">Memory 12</h3>
+            <p class="tl-text">May 4, 2025</p>
+            <p class="tl-note-slot">This is our first ccas night, which was a memorable one because we had our overnight and I gave you a bouquet of flowers. Memorable because I spent that night with you, and kahit di man ako pasok sa theme, natuwa ka pa din sa akin hehehehehe.</p>
+          </div>
+        </li>
+
+        <li class="tl-merged-item sr-left" data-delay=".60">
+          <div class="tl-merged-gallery">
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_E65CEE40-6AF1-4CC5-9EDE-EC0B7657F8AF.jpeg" alt="May 9, 2025 memory" loading="lazy" />
+            </div>
+          </div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <span class="tl-num">13</span>
+            <h3 class="tl-title">Memory 13</h3>
+            <p class="tl-text">May 9, 2025</p>
+            <p class="tl-note-slot">This is a memory for me kasi kahit simple and low type of concert man, kasama kita, and it was a fun overall night and a memorable one with you.</p>
+          </div>
+        </li>
+
+        <li class="tl-merged-item sr-right" data-delay=".65">
+          <div class="tl-merged-gallery">
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_AA6757F7-B106-4951-BEBE-ACA8E3BED5AE.jpeg" alt="June 4, 2025 memory" loading="lazy" />
+            </div>
+          </div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <span class="tl-num">14</span>
+            <h3 class="tl-title">Memory 14</h3>
+            <p class="tl-text">June 4, 2025</p>
+            <p class="tl-note-slot">Our simple Angel's Pizza date that we had, and it was a fun monthsary because we got to eat one of our favorite food which is pizza hihihi then chukchukanch.</p>
+          </div>
+        </li>
+
+        <li class="tl-merged-item sr-left" data-delay=".70">
+          <div class="tl-merged-gallery">
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_C2F5B6B3-D0B3-490B-B661-4DF38FA197C4.jpeg" alt="July 19, 2025 memory" loading="lazy" />
+            </div>
+          </div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <span class="tl-num">15</span>
+            <h3 class="tl-title">Memory 15</h3>
+            <p class="tl-text">July 19, 2025</p>
+            <p class="tl-note-slot">This is just a picture but it's memorable for me because this will be our future and sana naman ay baby girlch nga hohohoho.</p>
+          </div>
+        </li>
+
+        <li class="tl-merged-item sr-right" data-delay=".75">
+          <div class="tl-merged-gallery">
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_FF729564-0AD3-4BB4-B8E5-B612C93A5A05.jpeg" alt="July 28, 2025 memory" loading="lazy" />
+            </div>
+          </div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <span class="tl-num">16</span>
+            <h3 class="tl-title">Memory 16</h3>
+            <p class="tl-text">July 28, 2025</p>
+            <p class="tl-note-slot">This one was also a fun day for me because birthday ng mame, then you were the one to choose the flowers that I got for my mother. Natuwa lang din ang mame sa iyo noon, and nun lang din kami nagbigay ng bulaklak sa mame for her birthday.</p>
+          </div>
+        </li>
+
+        <li class="tl-merged-item sr-left" data-delay=".80">
+          <div class="tl-merged-gallery">
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_4662AE76-83DD-4053-B815-32B678A5309F.jpeg" alt="October 8, 2025 memory" loading="lazy" />
+            </div>
+          </div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <span class="tl-num">17</span>
+            <h3 class="tl-title">Memory 17</h3>
+            <p class="tl-text">October 8, 2025</p>
+            <p class="tl-note-slot">Just a memorable day for me because you were so beautiful in that top for that day, and yun nga din na binigyan kita ng flowers for that day, which was yellowch ang tanda ko hehehe.</p>
+          </div>
+        </li>
+
+        <li class="tl-merged-item sr-right" data-delay=".85">
+          <div class="tl-merged-gallery">
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_E239B432-9DC1-4394-B9EB-A05F4932E06E.jpeg" alt="November 18, 2025 memory" loading="lazy" />
+            </div>
+          </div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <span class="tl-num">18</span>
+            <h3 class="tl-title">Memory 18</h3>
+            <p class="tl-text">November 18, 2025</p>
+            <p class="tl-note-slot">Our first and last pistakasan together, tas nakita mo pa akong mag walang hiya maglaro dun sa gym ng lima HAHAHHAHAHAHAHAHA.</p>
+          </div>
+        </li>
+
+        <li class="tl-merged-item sr-left multi-bundle" data-delay=".90">
+          <div class="tl-merged-gallery">
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_973BA6D3-E556-4409-9C54-DE06604099BA.jpeg" alt="December 5, 2025 memory" loading="lazy" />
+            </div>
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_0ABBCE54-C188-4488-B7AE-4B14AB805E52.jpeg" alt="December 5, 2025 memory" loading="lazy" />
+            </div>
+          </div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <span class="tl-num">19</span>
+            <h3 class="tl-title">Memory 19</h3>
+            <p class="tl-text">December 5, 2025</p>
+            <p class="tl-note-slot">Our second and last ccas night, then also our first onight with other peoplech. Memorable day for me kasi we had so much activities that day, especially our iconic picture with our iconic pajamas AHAHAHAHAHAHAHAH. It was a fun day with my baby, then you were so beautifulch proving na kahit anong suot, pag kakagandach ng asawa ko na yan.</p>
+          </div>
+        </li>
+
+        <li class="tl-merged-item sr-right" data-delay=".95">
+          <div class="tl-merged-gallery">
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_9CE32A53-C5F6-46DF-ACA4-DCCB8D48380E.jpeg" alt="December 17, 2025 memory" loading="lazy" />
+            </div>
+          </div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <span class="tl-num">20</span>
+            <h3 class="tl-title">Memory 20</h3>
+            <p class="tl-text">December 17, 2025</p>
+            <p class="tl-note-slot">Our day that we had the Christmas party, and it was a fun overall day with my baby kasi we got to swim, then we had different foods together and experienced being around other people while still being with my baby hehehe.</p>
+          </div>
+        </li>
+
+        <li class="tl-merged-item sr-left" data-delay="1.00">
+          <div class="tl-merged-gallery">
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_D8690247-34B1-4948-A542-02F2138B4969.jpeg" alt="December 18, 2025 memory" loading="lazy" />
+            </div>
+          </div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <span class="tl-num">21</span>
+            <h3 class="tl-title">Memory 21</h3>
+            <p class="tl-text">December 18, 2025</p>
+            <p class="tl-note-slot">Our gift giving day hehehe, na ikaw pala ay nakita na ang regalo ko napaka dayaaaa. It was a fun day with my lovey since we had our date where we ate out, then our Dono's date where we gave our gifts. Thank you talaga lovey dun sa massage gun kasi helpful siya ngayong ojt time ko kasi lagi akong nakaupo at kalimitan sumasakit na back ko pa onti onti because of how I sit and gano katagal. We had our tiktoks and our gift giving this day which was so much fun hihihihi.</p>
+          </div>
+        </li>
+
+        <li class="tl-merged-item sr-right multi-bundle" data-delay="1.05">
+          <div class="tl-merged-gallery">
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_E9CC5A0E-6F9C-49E0-B973-A36FC4014D03.jpeg" alt="February 7, 2026 memory" loading="lazy" />
+            </div>
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_5BE6A6B4-04E7-4349-9979-0CCED5CE47D3.jpeg" alt="February 7, 2026 memory" loading="lazy" />
+            </div>
+          </div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <span class="tl-num">22</span>
+            <h3 class="tl-title">Memory 22</h3>
+            <p class="tl-text">February 7, 2026</p>
+            <p class="tl-note-slot">The MOST NERVOUS DAY OF JOSE AHHHAHAHAHAHHAHAHAHA, na nahuli mo pa ako na nakabili na pala ng bulaklak, tas dinahilan ko pa na nasa apartment yung pusa na nakita ko kahit nowhere to be found yung ganun ka smooth na semento AHAHHAHAHAHHAHAHAHAH. One for the books talaga tong araw na to gawa ng sobrang kaba ko, legit lovey. Eto yung maaalala ko talaga na kabado moments, kasi kakaakyat ko pa lang ng hagdan, kita ko agad ama mo, tas nagpanggap na lang ako na di ko nakita at nag cellphone na lang ako. Grabe yung pawis ko nun, sign talaga na kabado ako AHHAHAHAHAHHAA. Memorable day as well because I got to spend time with your family and more exposure hohohohoho.</p>
+          </div>
+        </li>
+
+        <li class="tl-merged-item sr-left" data-delay="1.10">
+          <div class="tl-merged-gallery">
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_DD13BF14-FB27-4398-BFF9-A2AE47601AB2.jpeg" alt="February 16, 2026 memory" loading="lazy" />
+            </div>
+          </div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <span class="tl-num">23</span>
+            <h3 class="tl-title">Memory 23</h3>
+            <p class="tl-text">February 16, 2026</p>
+            <p class="tl-note-slot">Our Tagaytay datech na nag span across 3 days kasi di na nakauwi ang totoy AHAHHAHAHAHAHAH. The most adventurous one for me kasi ang layo layo talaga ng pinuntahan, and iba siya for me kaysa sa pag Manila natin kasi naglilibot talaga kami ni Josh, then bumili pa ng flowers for you, and adventurous kasi namiss ko lang talaga yung byahe AHAHHAHAHAHAHAH. Memorable for the adventure and for the time we spent, and syempre valentines and our date. It's give and take talaga lovey for us, and I am so thankful for that.</p>
+          </div>
+        </li>
+
+        <li class="tl-merged-item sr-right" data-delay="1.15">
+          <div class="tl-merged-gallery">
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_D50D1DE3-A642-4969-B6B4-EE0C97E573D2.jpeg" alt="March 14, 2026 memory" loading="lazy" />
+            </div>
+          </div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <span class="tl-num">24</span>
+            <h3 class="tl-title">Memory 24</h3>
+            <p class="tl-text">March 14, 2026</p>
+            <p class="tl-note-slot">Our onight na wala tayong gastos kung hindi food lang hehhee. Memorable kasi matagal tayong hindi nakapagkita and I just missed you, and nakapagsulit tayo kahit kasakit ng katawan gawa ng kama AHAHAHHAHAHAHHAHA.</p>
+          </div>
+        </li>
+
+        <li class="tl-merged-item sr-left march-bundle multi-bundle" data-delay="1.20">
+          <div class="tl-merged-gallery">
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_4AEC3E5A-C651-4308-AB2D-0EA869D9A3D7.jpeg" alt="March 27, 2026 memory" loading="lazy" />
+            </div>
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_690E70DA-70A5-4432-BFAD-359AE4919302.jpeg" alt="March 27, 2026 memory" loading="lazy" />
+            </div>
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_82A76507-7E3F-4F3D-ACA8-EDEF66D589E3.jpeg" alt="March 28, 2026 memory" loading="lazy" />
+            </div>
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_891D3C9D-121A-4F63-B59B-137E35900B91.jpeg" alt="March 28, 2026 memory" loading="lazy" />
+            </div>
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_96859246-6812-4FB7-BB56-F85A213AD913.jpeg" alt="March 29, 2026 memory" loading="lazy" />
+            </div>
+            <div class="tl-merged-image">
+              <img src="hohoo-20260403T102655Z-1-001/hohoo/Messenger_creation_EC1F0D18-8312-4721-BD89-45BE947AC41B.jpeg" alt="March 29, 2026 memory" loading="lazy" />
+            </div>
+          </div>
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-body">
+            <span class="tl-num">25</span>
+            <h3 class="tl-title">Memory 25</h3>
+            <p class="tl-text">March 27-29, 2026</p>
+            <p class="tl-note-slot">Our advanced anniversary celebration which was the best for me because we got to explore some parts of Manila, then we got to sleep and cuddlech all the time, and yun ngang pag explore which was new to me, lalo na sa Manila kasi usually pag-explore ko dun is through malls lang and kasama family. I'm just happy I got to experience this with you lovey before we get jobs in the future, kasi these kinds of adventures are memorable for me dahil may iba ibang happenings like gala with mabibigat na bags, explore explorech, commute lang, then our bahay bahayan sa Airbnb which was the best stay talaga and so comfy pa hihihihi. Thank you my lovey.</p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════
+       § 4 · LETTER TO YOU
+       ════════════════════════════════════ -->
+  <section id="letter" class="s-letter" aria-label="A letter to you">
+    <div class="wrap wrap-sm">
+      <p class="tag sr" data-delay=".0">A Letter to You</p>
+      <h2 class="section-h sr" data-delay=".06">Written from the heart.</h2>
+
+      <article class="letter-card sr" data-delay=".12" aria-label="Love letter">
+        <p class="letter-dear">My dearest Ali,</p>
+        <div id="letter-text" class="letter-body" aria-live="polite" aria-label="Letter content"></div>
+        <div class="letter-cursor" id="letter-cursor" aria-hidden="true">|</div>
+        <p class="letter-sign">
+          Forever yours,<br />
+          <strong>Jose</strong>
+        </p>
+      </article>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════
+       § 6 · OUR SONG
+       ════════════════════════════════════ -->
+  <section id="song" class="s-song" aria-label="Our favorite song">
+    <div class="wrap wrap-sm">
+      <p class="tag sr" data-delay=".0">Our Song</p>
+      <h2 class="section-h sr" data-delay=".06">The soundtrack to us.</h2>
+
+      <div class="player sr" data-delay=".12" role="region" aria-label="Music player">
+        <!-- Animated glow orb (visual only) -->
+        <div class="player-orb" id="player-orb" aria-hidden="true"></div>
+
+        <div class="player-info">
+          <p class="song-title">Darling, I</p>
+          <p class="song-artist">Tyler, The Creator</p>
+        </div>
+
+        <div class="player-controls" role="group" aria-label="Playback controls">
+          <button class="nav-btn" id="rew-btn" aria-label="Back 10 seconds">-10s</button>
+
+          <button class="play-btn" id="play-btn" aria-label="Play or pause our song" aria-pressed="false">
+            <!-- Play icon -->
+            <svg class="ico ico-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <polygon points="6,3 20,12 6,21" fill="currentColor"/>
+            </svg>
+            <!-- Pause icon (hidden by default) -->
+            <svg class="ico ico-pause" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" hidden>
+              <rect x="5"  y="3" width="4" height="18" rx="1" fill="currentColor"/>
+              <rect x="15" y="3" width="4" height="18" rx="1" fill="currentColor"/>
+            </svg>
+          </button>
+
+          <button class="nav-btn" id="fwd-btn" aria-label="Forward 10 seconds">+10s</button>
+        </div>
+
+        <div class="track-nav" aria-label="Song timeline">
+          <span class="time-code" id="time-current">0:00</span>
+          <input
+            class="seek-bar"
+            id="seek-bar"
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            step="0.1"
+            aria-label="Seek through song"
+          />
+          <span class="time-code" id="time-total">0:00</span>
+        </div>
+
+        <!-- Waveform bars (built by JS) -->
+        <div class="waveform" id="waveform" aria-hidden="true"></div>
+
+        <audio id="audio" preload="auto" loop autoplay playsinline>
+          <source src="audio/DARLING,%20I%20(Official%20Video).mp3" type="audio/mpeg" />
+          Your browser does not support audio.
+        </audio>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════
+       § 7 · REASONS I LOVE YOU
+       ════════════════════════════════════ -->
+  <section id="reasons" class="s-reasons" aria-label="Reasons I love you">
+    <div class="wrap">
+      <p class="tag sr" data-delay=".0">Reasons I Love You</p>
+      <h2 class="section-h sr" data-delay=".06">Let me count the ways.</h2>
+
+      <!-- Card stack populated by JS -->
+      <div
+        class="card-stage sr"
+        id="card-stage"
+        data-delay=".12"
+        role="region"
+        aria-label="Love reasons card stack"
+        aria-live="polite"
+      ></div>
+
+      <div class="reasons-ctrl">
+        <button class="btn-ghost" id="next-btn" aria-label="Reveal next reason">
+          <span id="next-label">Next Reason</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <polyline points="9,18 15,12 9,6"/>
+          </svg>
+        </button>
+        <span class="card-counter" id="card-counter" aria-live="polite"></span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════
+       § 8 · CLOSING / PROMISE
+       ════════════════════════════════════ -->
+  <section id="closing" class="s-closing" aria-label="Our promise">
+    <div class="wrap wrap-sm closing-inner">
+      <div class="closing-glow" aria-hidden="true"></div>
+
+      <p class="tag sr" data-delay=".0">Our Promise</p>
+
+      <blockquote class="promise-text sr" data-delay=".08">
+        No matter how many orbits we make around the sun,<br />
+        I choose you. Again. Always.
+      </blockquote>
+
+      <p class="promise-sig sr" data-delay=".16">
+        — Jose, <time datetime="2025-04-04">April 4, 2025</time>
+      </p>
+
+      <a
+        href="#hero"
+        class="btn-primary magnetic sr"
+        data-delay=".24"
+        id="replay-btn"
+        aria-label="Replay our story from the beginning"
+      >
+        <span>↑ Replay Our Story</span>
+      </a>
+    </div>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
