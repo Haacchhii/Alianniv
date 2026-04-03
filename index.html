@@ -20,8 +20,8 @@
 
   <!-- ─── SIDE DOT NAVIGATION ─── -->
   <nav class="dot-nav" aria-label="Page sections">
-    <a href="#hero"    class="dot" data-sec="hero"    aria-label="Hero"     title="Home"></a>
     <a href="#counter" class="dot" data-sec="counter" aria-label="Counter"  title="Time Together"></a>
+    <a href="#hero"    class="dot" data-sec="hero"    aria-label="Hero"     title="Home"></a>
     <a href="#song"    class="dot" data-sec="song"    aria-label="Song"     title="Our Song"></a>
     <a href="#timeline"class="dot" data-sec="timeline"aria-label="Timeline" title="Our Story"></a>
     <a href="#letter"  class="dot" data-sec="letter"  aria-label="Letter"   title="Letter"></a>
@@ -29,38 +29,7 @@
   </nav>
 
   <!-- ════════════════════════════════════
-       § 1 · HERO
-       ════════════════════════════════════ -->
-  <section id="hero" class="s-hero">
-    <div class="hero-inner">
-      <p class="eyebrow fi" style="--d:.2s">
-        Since <time datetime="2025-04-04">April 4, 2025</time>
-      </p>
-
-      <h1 class="hero-names fi" style="--d:.55s">
-        <span class="name-hers">Ali</span>
-        <span class="hero-amp" aria-hidden="true">&amp;</span>
-        <span class="name-his">Jose</span>
-      </h1>
-
-      <p class="hero-tagline fi" style="--d:.9s">
-        <em>In a universe of a billion stars,<br>I'd cross every orbit to find you.</em>
-      </p>
-
-      <a href="#counter" class="btn-primary magnetic fi" style="--d:1.25s" aria-label="Begin our story">
-        <span>Begin Our Story</span>
-      </a>
-    </div>
-
-    <!-- Animated scroll cue -->
-    <div class="scroll-cue fi" style="--d:1.7s" aria-hidden="true">
-      <span class="scroll-line"></span>
-    </div>
-  </section>
-
-
-  <!-- ════════════════════════════════════
-       § 2 · LIVE COUNTER
+       § 1 · LIVE COUNTER
        ════════════════════════════════════ -->
   <section id="counter" class="s-counter" aria-label="Time together">
     <div class="wrap">
@@ -91,8 +60,44 @@
           <span class="c-num" id="c-mins"   aria-label="Minutes">–</span>
           <span class="c-lbl">Minutes</span>
         </div>
+        <span class="c-dot sr" data-delay=".28" aria-hidden="true">·</span>
+        <div class="c-unit sr" data-delay=".30" role="listitem">
+          <span class="c-num" id="c-secs"   aria-label="Seconds">–</span>
+          <span class="c-lbl">Seconds</span>
+        </div>
       </div>
 
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════
+       § 2 · HERO
+       ════════════════════════════════════ -->
+  <section id="hero" class="s-hero">
+    <div class="hero-inner">
+      <p class="eyebrow fi" style="--d:.2s">
+        Since <time datetime="2025-04-04">April 4, 2025</time>
+      </p>
+
+      <h1 class="hero-names fi" style="--d:.55s">
+        <span class="name-hers">Ali</span>
+        <span class="hero-amp" aria-hidden="true">&amp;</span>
+        <span class="name-his">Jose</span>
+      </h1>
+
+      <p class="hero-tagline fi" style="--d:.9s">
+        <em>In a universe of a billion stars,<br>I'd cross every orbit to find you.</em>
+      </p>
+
+      <a href="#song" class="btn-primary magnetic fi" style="--d:1.25s" aria-label="Begin our story">
+        <span>Begin Our Story</span>
+      </a>
+    </div>
+
+    <!-- Animated scroll cue -->
+    <div class="scroll-cue fi" style="--d:1.7s" aria-hidden="true">
+      <span class="scroll-line"></span>
     </div>
   </section>
 

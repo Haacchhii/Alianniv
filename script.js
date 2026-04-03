@@ -317,6 +317,7 @@ const NO_MOTION = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     days:   document.getElementById('c-days'),
     hours:  document.getElementById('c-hours'),
     mins:   document.getElementById('c-mins'),
+    secs:   document.getElementById('c-secs'),
   };
 
   function getPHTime() {
@@ -335,7 +336,9 @@ const NO_MOTION = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     let days   = now.getDate()      - start.getDate();
     let hours  = now.getHours()     - start.getHours();
     let mins   = now.getMinutes()   - start.getMinutes();
+    let secs   = now.getSeconds()   - start.getSeconds();
 
+    if (secs   < 0) { secs   += 60; mins--;  }
     if (mins   < 0) { mins   += 60; hours--; }
     if (hours  < 0) { hours  += 24; days--;  }
     if (days   < 0) {
@@ -345,7 +348,7 @@ const NO_MOTION = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     }
     if (months < 0) { months += 12; years--; }
 
-    return { years, months, days, hours, mins };
+    return { years, months, days, hours, mins, secs };
   }
 
   function render() {
@@ -355,10 +358,11 @@ const NO_MOTION = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (els.days)   els.days.textContent   = v.days;
     if (els.hours)  els.hours.textContent  = v.hours;
     if (els.mins)   els.mins.textContent   = String(v.mins).padStart(2, '0');
+    if (els.secs)   els.secs.textContent   = String(v.secs).padStart(2, '0');
   }
 
   render();
-  setInterval(render, 1_000); /* refresh every 1 s for live minute updates */
+  setInterval(render, 1_000); /* refresh every 1 s for live second updates */
 
 })();
 
