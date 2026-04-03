@@ -22,10 +22,9 @@
   <nav class="dot-nav" aria-label="Page sections">
     <a href="#hero"    class="dot" data-sec="hero"    aria-label="Hero"     title="Home"></a>
     <a href="#counter" class="dot" data-sec="counter" aria-label="Counter"  title="Time Together"></a>
+    <a href="#song"    class="dot" data-sec="song"    aria-label="Song"     title="Our Song"></a>
     <a href="#timeline"class="dot" data-sec="timeline"aria-label="Timeline" title="Our Story"></a>
     <a href="#letter"  class="dot" data-sec="letter"  aria-label="Letter"   title="Letter"></a>
-    <a href="#song"    class="dot" data-sec="song"    aria-label="Song"     title="Our Song"></a>
-    <a href="#reasons" class="dot" data-sec="reasons" aria-label="Reasons"  title="Reasons"></a>
     <a href="#closing" class="dot" data-sec="closing" aria-label="Closing"  title="Promise"></a>
   </nav>
 
@@ -99,7 +98,69 @@
 
 
   <!-- ════════════════════════════════════
-       § 3 · OUR STORY & TIMELINE
+       § 3 · OUR SONG
+       ════════════════════════════════════ -->
+  <section id="song" class="s-song" aria-label="Our favorite song">
+    <div class="wrap wrap-sm">
+      <p class="tag sr" data-delay=".0">Our Song</p>
+      <h2 class="section-h sr" data-delay=".06">The soundtrack to us.</h2>
+
+      <div class="player sr" data-delay=".12" role="region" aria-label="Music player">
+        <!-- Animated glow orb (visual only) -->
+        <div class="player-orb" id="player-orb" aria-hidden="true"></div>
+
+        <div class="player-info">
+          <p class="song-title">Darling, I</p>
+          <p class="song-artist">Tyler, The Creator</p>
+        </div>
+
+        <div class="player-controls" role="group" aria-label="Playback controls">
+          <button class="nav-btn" id="rew-btn" aria-label="Back 10 seconds">-10s</button>
+
+          <button class="play-btn" id="play-btn" aria-label="Play or pause our song" aria-pressed="false">
+            <!-- Play icon -->
+            <svg class="ico ico-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <polygon points="6,3 20,12 6,21" fill="currentColor"/>
+            </svg>
+            <!-- Pause icon (hidden by default) -->
+            <svg class="ico ico-pause" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" hidden>
+              <rect x="5"  y="3" width="4" height="18" rx="1" fill="currentColor"/>
+              <rect x="15" y="3" width="4" height="18" rx="1" fill="currentColor"/>
+            </svg>
+          </button>
+
+          <button class="nav-btn" id="fwd-btn" aria-label="Forward 10 seconds">+10s</button>
+        </div>
+
+        <div class="track-nav" aria-label="Song timeline">
+          <span class="time-code" id="time-current">0:00</span>
+          <input
+            class="seek-bar"
+            id="seek-bar"
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            step="0.1"
+            aria-label="Seek through song"
+          />
+          <span class="time-code" id="time-total">0:00</span>
+        </div>
+
+        <!-- Waveform bars (built by JS) -->
+        <div class="waveform" id="waveform" aria-hidden="true"></div>
+
+        <audio id="audio" preload="auto" loop autoplay playsinline>
+          <source src="audio/DARLING,%20I%20(Official%20Video).mp3" type="audio/mpeg" />
+          Your browser does not support audio.
+        </audio>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════
+       § 4 · OUR STORY & TIMELINE
        ════════════════════════════════════ -->
   <section id="timeline" class="s-timeline" aria-label="Our story milestones">
     <div class="wrap">
@@ -540,100 +601,6 @@
       </article>
     </div>
   </section>
-
-
-  <!-- ════════════════════════════════════
-       § 6 · OUR SONG
-       ════════════════════════════════════ -->
-  <section id="song" class="s-song" aria-label="Our favorite song">
-    <div class="wrap wrap-sm">
-      <p class="tag sr" data-delay=".0">Our Song</p>
-      <h2 class="section-h sr" data-delay=".06">The soundtrack to us.</h2>
-
-      <div class="player sr" data-delay=".12" role="region" aria-label="Music player">
-        <!-- Animated glow orb (visual only) -->
-        <div class="player-orb" id="player-orb" aria-hidden="true"></div>
-
-        <div class="player-info">
-          <p class="song-title">Darling, I</p>
-          <p class="song-artist">Tyler, The Creator</p>
-        </div>
-
-        <div class="player-controls" role="group" aria-label="Playback controls">
-          <button class="nav-btn" id="rew-btn" aria-label="Back 10 seconds">-10s</button>
-
-          <button class="play-btn" id="play-btn" aria-label="Play or pause our song" aria-pressed="false">
-            <!-- Play icon -->
-            <svg class="ico ico-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <polygon points="6,3 20,12 6,21" fill="currentColor"/>
-            </svg>
-            <!-- Pause icon (hidden by default) -->
-            <svg class="ico ico-pause" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" hidden>
-              <rect x="5"  y="3" width="4" height="18" rx="1" fill="currentColor"/>
-              <rect x="15" y="3" width="4" height="18" rx="1" fill="currentColor"/>
-            </svg>
-          </button>
-
-          <button class="nav-btn" id="fwd-btn" aria-label="Forward 10 seconds">+10s</button>
-        </div>
-
-        <div class="track-nav" aria-label="Song timeline">
-          <span class="time-code" id="time-current">0:00</span>
-          <input
-            class="seek-bar"
-            id="seek-bar"
-            type="range"
-            min="0"
-            max="100"
-            value="0"
-            step="0.1"
-            aria-label="Seek through song"
-          />
-          <span class="time-code" id="time-total">0:00</span>
-        </div>
-
-        <!-- Waveform bars (built by JS) -->
-        <div class="waveform" id="waveform" aria-hidden="true"></div>
-
-        <audio id="audio" preload="auto" loop autoplay playsinline>
-          <source src="audio/DARLING,%20I%20(Official%20Video).mp3" type="audio/mpeg" />
-          Your browser does not support audio.
-        </audio>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ════════════════════════════════════
-       § 7 · REASONS I LOVE YOU
-       ════════════════════════════════════ -->
-  <section id="reasons" class="s-reasons" aria-label="Reasons I love you">
-    <div class="wrap">
-      <p class="tag sr" data-delay=".0">Reasons I Love You</p>
-      <h2 class="section-h sr" data-delay=".06">Let me count the ways.</h2>
-
-      <!-- Card stack populated by JS -->
-      <div
-        class="card-stage sr"
-        id="card-stage"
-        data-delay=".12"
-        role="region"
-        aria-label="Love reasons card stack"
-        aria-live="polite"
-      ></div>
-
-      <div class="reasons-ctrl">
-        <button class="btn-ghost" id="next-btn" aria-label="Reveal next reason">
-          <span id="next-label">Next Reason</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <polyline points="9,18 15,12 9,6"/>
-          </svg>
-        </button>
-        <span class="card-counter" id="card-counter" aria-live="polite"></span>
-      </div>
-    </div>
-  </section>
-
 
   <!-- ════════════════════════════════════
        § 8 · CLOSING / PROMISE
